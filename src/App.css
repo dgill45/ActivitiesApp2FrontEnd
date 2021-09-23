@@ -21,6 +21,7 @@
   margin-left: 10px;
   margin-right: 10px;
   border-radius: 20px;
+  background-color: black
 }
 
 .card {
@@ -34,6 +35,15 @@
   box-shadow: 3px 4px #e04b52;
 }
 
+.card-container {
+
+  width: 12rem;
+  height: 22rem;
+  padding: 2rem;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
 .clicked {
-  height: 2 rem;
+  height: 20px;
 }

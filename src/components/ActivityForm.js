@@ -45,21 +45,25 @@ function ActivityForm({activities}){
                     onChange = {handleChange} 
                     value ={newActivity.name} 
                     placeholder="Name of new activity"/>
+                    <br /> 
                 <input type ="text" 
                     name = "date" 
                     onChange = {handleChange} 
                     value ={newActivity.date} 
                     placeholder="Date activity takes place"/>
+                    <br /> 
                 <input type ="text" 
                     name = "location" 
                     onChange = {handleChange} 
                     value = {newActivity.location} 
                     placeholder ="Where will activity take place"></input>
+                    <br /> 
                 <input type ="text" 
                     name = "post" 
                     onChange = {handleChange } 
                     value = {newActivity.post} 
                     placeholder = "Post short message about activity."></input>
+                    <br /> 
                 <input type ="submit" 
                     name ="submit" 
                     value="Submit New Activity" 
