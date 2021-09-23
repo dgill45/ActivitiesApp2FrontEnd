@@ -31,7 +31,7 @@ function ActivitiesPage(){
         setShowForm((showForm) => !showForm)
       }
 
-      
+
     return(
 
         <div>
@@ -40,7 +40,7 @@ function ActivitiesPage(){
             {showForm ? <ActivityForm 
                 activityCards = {activityCards}
                 /> : null}
-            <div className="buttonContainer">
+            <div className="button-container">
                 <button onClick={handleClick}>Add a new Activity</button>
             </div>
         </div>
