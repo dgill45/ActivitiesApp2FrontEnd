@@ -58,11 +58,14 @@ function ActivityDetails({activities}){
                     <p>{activity.location}</p>
                     <p>{activity.post}</p>
                 </div>
-                {/*<Messages activity={activity}/>*/}
+                
                 <button className = 'clicked' onClick = {handleEditActivity}> Edit this Activity</button>
                 <button className = 'clicked' onClick = {handleDeleteActivity}>Delete This Activity!</button>
             </div>}
+            {/*<Messages activity={activity}/>*/}
         </div>
+
+        
     )
 }
 
