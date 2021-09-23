@@ -5,9 +5,10 @@ import {useParams} from 'react-router-dom';
 
 function ActivityDetails({activities}){
 
-    const [activity, setActivity] = useState([])
+    const [activity, setActivity] = useState(null)
     const {id} = useParams()
 
+    /* Show activity */
     useEffect(() =>{
         fetch(`http://localhost:3000/activities/${id}`)
         .then((res) => res.json())
@@ -15,6 +16,7 @@ function ActivityDetails({activities}){
 
     }, [id])
 
+    /* Edit activity */
 
     function handleEditActivity(id){
         fetch(`http://localhost:3000/activities/${id}`, {
@@ -33,6 +35,8 @@ function ActivityDetails({activities}){
                   setActivity(updatedActivityList)
           })
         }
+
+        /* Delete activity */
 
     function handleDeleteActivity(id) {
         fetch(`http://localhost:3000/activities/${id}`, {
