@@ -37,9 +37,9 @@
 
 .card-container {
 
-  width: 6rem;
+  width: 100px;
   height: 22rem;
-  padding: 2rem;
+  padding: 20px;
   justify-content: center;
   flex-direction: column;
   align-items: center;

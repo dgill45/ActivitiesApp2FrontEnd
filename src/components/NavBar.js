@@ -19,7 +19,9 @@ function NavBar({onLogin, onLogout}){
 
 
     function handleLogin(){
-    onLogin(setUser)
+
+        
+        onLogin(setUser)
 
     }
 

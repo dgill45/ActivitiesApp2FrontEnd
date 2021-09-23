@@ -2,7 +2,7 @@ import React from "react"
 import {Link} from 'react-router-dom'
 
 
-function ActivityCard({name, date, location, post, id, handleDeleteActivity, handleEditActivity}){
+function ActivityCard({name, date, location, post, id, handleDeleteActivity}){
 
     return (
         <div className ='card-container'>
