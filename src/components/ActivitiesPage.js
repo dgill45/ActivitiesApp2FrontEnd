@@ -22,11 +22,16 @@ function ActivitiesPage(){
                     date = {activity.date}
                     location = {activity.location}
                     post = {activity.post}
-                    /*handleDeleteBook={handleDeleteBook}
-                    handleEditBook = {handleEditBook}*/
+                    id = {activity.id}
+                    /*handleDeleteBook={handleDeleteActivity}
+                    handleEditBook = {handleEditActivity}*/
                     />
     }) 
 
+    function updateActivities(activity){
+
+
+    }
     function handleClick() {
         setShowForm((showForm) => !showForm)
       }
@@ -36,13 +41,16 @@ function ActivitiesPage(){
 
         <div>
             <header>Activities Board</header>
-            {activities && activityCards}
-            {showForm ? <ActivityForm 
-                activityCards = {activityCards}
-                /> : null}
-            <div className="button-container">
-                <button onClick={handleClick}>Add a new Activity</button>
-            </div>
+                <div className = 'card-box'>
+                    {activities && activityCards}
+                </div>
+                    {showForm ? <ActivityForm 
+                        activityCards = {activityCards}
+                        /> : null}
+                    <div className="button-container">
+                        <button onClick={handleClick}>Add a new Activity</button>
+                    </div>
+                
         </div>
     )
 }

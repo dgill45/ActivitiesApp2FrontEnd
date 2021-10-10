@@ -33,7 +33,6 @@ function NavBar({onLogin, onLogout}){
 
     return (
         <nav className="navbar">
-                
                 <header className="jumbotron">
                     <div className= "nav-link-container flex-row">
                         

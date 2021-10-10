@@ -7,7 +7,8 @@ function ActivityDetails({activities}){
 
     const [activity, setActivity] = useState(null)
     const {id} = useParams()
-
+    console.log(id)
+    
     /* Show activity */
     useEffect(() =>{
         fetch(`http://localhost:3000/activities/${id}`)
@@ -18,7 +19,7 @@ function ActivityDetails({activities}){
 
     /* Edit activity */
 
-    function handleEditActivity(id){
+    function handleEditActivity(){
         fetch(`http://localhost:3000/activities/${id}`, {
               method: "PATCH",
               headers: {
@@ -28,27 +29,27 @@ function ActivityDetails({activities}){
               body: JSON.stringify(activities),
             })
               .then((r) => r.json())
-              .then((activities) => {
+              /*.then((activities) => {
                 const updatedActivityList =activities.filter((activity) =>{
                   return activity.id !==id      
                   })     
                   setActivity(updatedActivityList)
-          })
+          })*/
         }
 
         /* Delete activity */
 
-    function handleDeleteActivity(id) {
+    function handleDeleteActivity() {
         fetch(`http://localhost:3000/activities/${id}`, {
           method: "DELETE",
         })
-          .then((r) => r.json())
-          .then(() => {
+          /*.then((r) => r.json())
+         /* .then(() => {
            const updatedActivityList =activities.filter((activity) =>{
              return activity.id !==id      
              })
              setActivity(updatedActivityList)
-          });
+          });*/
       }
 
     return (
